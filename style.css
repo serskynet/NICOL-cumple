@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e103f5, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background: white;
+  width: 95%;
+  max-width: 520px;
+  padding: 45px 35px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+/* NOMBRE CIRCULAR */
+.name-circle {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+}
+
+.name-circle svg {
+  width: 100%;
+  height: 100%;
+  animation: spin 18s linear infinite;
+}
+
+.name-circle text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  fill: #ff3cac;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* FOTO */
+.photo-container {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ff3cac;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TÍTULO */
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.4rem;
+  color: #ff3cac;
+  margin-bottom: 18px;
+}
+
+/* MENSAJE */
+.message-box {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* BOTÓN */
+button {
+  background: #ff3cac;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+button:hover {
+  background: #ff1f8a;
+  transform: scale(1.05);
+}
+
+/* CANVAS CONFETI */
+#fireworksCanvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.name-circle textPath {
+  dominant-baseline: middle;
+}

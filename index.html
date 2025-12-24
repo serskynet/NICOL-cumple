@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumple 🎉</title>
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Música -->
+    <audio id="bgMusic" src="Kato _ Jon - Turn The Lights Off (Sub. Español  Lyrics).mp3" autoplay loop></audio>
+
+    <div class="card-container">
+
+        <!-- NOMBRE CIRCULAR -->
+      
+    <div class="name-circle">
+        <svg viewBox="0 0 300 300">
+            <defs>
+                <path id="circlePath"
+                      d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0"/>
+            </defs>
+            <text>
+                <textPath href="#circlePath">
+                    ✨ FELIZ CUMPLEAÑOS NICOL ALEJANDRA ✨ FELIZ CUMPLEAÑOS
+                </textPath>
+                </text>
+            </svg>
+        </div>
+
+        <!-- FOTO -->
+        <div class="photo-container">
+            <img src="WhatsApp Image 2025-12-23 at 11.26.03 PM.jpeg" alt="Foto especial">
+        </div>
+
+        <h1 class="title">¡Te celebramos hoy! 🎂</h1>
+
+        <div class="message-box">
+            <p>
+                Hoy celebramos tu vida, tu sonrisa y todo lo bonito que eres.
+            </p>
+            <p>
+                Que este nuevo año venga cargado de sueños cumplidos 💖
+            </p>
+        </div>
+
+        <button id="celebrateBtn">Sorpresa 🎆</button>
+
+        <canvas id="fireworksCanvas"></canvas>
+    </div>
+
+    <!-- Confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
